@@ -46,9 +46,3 @@ Or run workspace tests:
 ```bash
 cargo test --workspace
 ```
-
-Notes & recommendations
-
-- `.gitignore` should include `target/`, `.soroban/`, `.stellar/`, editor folders (`.vscode/`, `.idea/`) and OS files (`.DS_Store`).
-- Use `soroban-sdk` test utilities (feature `testutils`) when writing unit tests that mock auth and environment.
-- For token metadata and safe token operations rely on the `stellar-tokens` base implementations and guard flows with `only_owner` / `when_not_paused` macros.
