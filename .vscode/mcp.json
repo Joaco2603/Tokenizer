@@ -1,0 +1,9 @@
+{
+	"servers": {
+		"0penZeppelinStellarContracts": {
+			"type": "http",
+			"url": "https://mcp.openzeppelin.com/contracts/stellar/mcp"
+		}
+	},
+	"inputs": []
+}

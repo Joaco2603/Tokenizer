@@ -1,0 +1,19 @@
+[package]
+name = "my-token"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+stellar-access = { git = "https://github.com/OpenZeppelin/stellar-contracts", tag = "v0.6.0" }
+stellar-contract-utils = { git = "https://github.com/OpenZeppelin/stellar-contracts", tag = "v0.6.0" }
+stellar-tokens = { git = "https://github.com/OpenZeppelin/stellar-contracts", tag = "v0.6.0" }
+stellar-macros = { git = "https://github.com/OpenZeppelin/stellar-contracts", tag = "v0.6.0" }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
