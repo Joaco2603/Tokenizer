@@ -1,4 +1,4 @@
-use soroban_sdk::{symbol_short, Address, Env};
+use soroban_sdk::{symbol_short, Address, Env, MuxedAddress};
 
 pub struct TokenEvents;
 
@@ -8,7 +8,7 @@ impl TokenEvents {
         e.events().publish(topics, amount);
     }
 
-    pub fn transfer(e: &Env, from: Address, to: Address, amount: i128) {
+    pub fn transfer(e: &Env, from: Address, to: MuxedAddress, amount: i128) {
         let topics = (symbol_short!("transfer"), from, to);
         e.events().publish(topics, amount);
     }
