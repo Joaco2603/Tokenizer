@@ -105,6 +105,6 @@ stellar contract invoke \
 
 Notas
 - Reemplaza `my_contract.wasm` por el nombre real del archivo WASM generado.
-- Para despliegues en `mainnet`, cambia `NETWORK=mainnet` y asegúrate de usar claves y fondos adecuados.
+- Para despliegues en `mainnet`, cambia `NETWORK=mainnet` y asegúrate de usar claves y fondos adecuados
 
 
